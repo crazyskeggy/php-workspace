@@ -34,7 +34,7 @@ define("MYSQL_DB", "");
 # You can change this setting to have multiple installations of
 # PHP Workspace in the same database.
 # It must end in an underscore, and contain only A-Z, a-z, 0-9 and _
-define("MYSQL_PREFIX", "pw_")
+define("MYSQL_PREFIX", "pw_");
 
 # Default Language - the language must be installed in /includes/langs
 define("DEFAULT_LANG", "en-GB");
