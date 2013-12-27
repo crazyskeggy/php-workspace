@@ -8,7 +8,12 @@
  * Default Language
  *
  * It is reccomended that you do not store this in a server-visible
- * directory
+ * directory. If you do this, you must create "config.php" with the
+ * following data:
+ *
+ * require "/path/to/config.php";
+ *
+ * and put this file elsewhere.
  * 
  */
 
