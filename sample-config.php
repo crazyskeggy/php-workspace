@@ -31,9 +31,8 @@ define("MYSQL_USER", "");
 /** The password of the MySQL user */
 define("MYSQL_PASS", "");
 
-/** The MySQL server (usually localhost) */
-define("MYSQL_SERVER", "localhost");
-
+/** The MySQL host (usually localhost) */
+define("MYSQL_HOST", "localhost");
 
 /**
  * MySQL Table Prefix
@@ -48,10 +47,9 @@ define("MYSQL_PREFIX", "pw_");
 /**
  * The default language for PHP workspace.
  * 
- * Languages are kept in the /includes/languages directory
+ * Language files are kept in the /includes/languages directory
  */
 define("DEFAULT_LANG", "en");
 
 /* That's everything! You can now start your installation! */
 
-?>
