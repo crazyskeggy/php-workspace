@@ -1,0 +1,4 @@
+# We want this to folder to stay empty, so we exclude all files.
+*
+# But we don't want this file unversioned, so we ex-exclude it
+!.gitignore
