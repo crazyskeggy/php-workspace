@@ -17,13 +17,10 @@
 
 /** Define PATH as the current directory. */
 define("PATH", __DIR__ . '/');
+require PATH . "/constants.php";
 
-// Define the includes and content direcotry names
-define("INCLUDES", PATH . "includes");
-define("CONTENT", PATH . "content");
 
 // Load files in includes
-require INCLUDES . "/constants.php";
 require INCLUDES . "/checkserver.php";
 require INCLUDES . "/themes.php";
 		
