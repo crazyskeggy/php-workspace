@@ -51,5 +51,15 @@ define("MYSQL_PREFIX", "pw_");
  */
 define("DEFAULT_LANG", "en");
 
+/**
+ * The path of the files stored.
+ *
+ * This path is relative to the installation root, with
+ * no starting `/`
+ * 
+ * @internal Default value is: `files/`
+ */
+define("FILES_DIR", "files/");
+
 /* That's everything! You can now start your installation! */
 
