@@ -15,18 +15,9 @@
  * 
  */ 
 
-/** Define PATH as the current directory. */
-define("PATH", __DIR__ . '/');
-require PATH . "/constants.php";
-
+// Load constants into memory
+require __DIR__ . "/constants.php";
 
 // Load files in includes
-require INCLUDES . "/checkserver.php";
-require INCLUDES . "/themes.php";
-		
-// call functions from checkserver.php
-loadConfigPHP();
-checkPHP();
-checkMySQL();
-maintenanceCheck();
-setLangsDir();
+require INCLUDES . "/load-includes.php";
+
