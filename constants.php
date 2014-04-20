@@ -1,7 +1,9 @@
 <?php
 /**
- * Loads the constants into memory.
+ * Loads most constants into memory.
  */
+
+// Set constants containing info about PHP Workspace up
 
 /** Current PHP version */
 define("phpVersion", phpversion());
@@ -11,6 +13,8 @@ define("phpRequired", 5.4);
 define("pwVersion", "0.0.1 alpha");
 /** Version of PHP Workspace that can be used as a condition */
 define("pwMinorVersion", 0.0);
+
+// Set various folder constants up (MySQL-related constants are set in "config" FILES is set in "load-includes")
 /** Reference to /includes directory for use in other scripts */
 define("INCLUDES", PATH . "includes");
 /** Reference to /content directory for use in other scripts */
