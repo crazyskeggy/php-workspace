@@ -15,6 +15,9 @@ define("pwVersion", "0.0.1 alpha");
 define("pwMinorVersion", 0.0);
 
 // Set various folder constants up (MySQL-related constants are set in "config" FILES is set in "load-includes")
+
+/** The `PATH` constant is the current directory */
+define("PATH", __DIR__ . "/");
 /** Reference to /includes directory for use in other scripts */
 define("INCLUDES", PATH . "includes");
 /** Reference to /content directory for use in other scripts */
