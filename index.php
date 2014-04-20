@@ -1,7 +1,7 @@
 <?php
 /** 
- * This page does nothing.
- * All it does is load the load.php file, which loads the entire application.
+ * This page does almost nothing.
+ * All it does is load load.php and start the session.
  * 
  * The GET and POST parameters control which "page" is to be loaded.
  * A .htaccess file can be used to show a regular directory structure in the address bar
