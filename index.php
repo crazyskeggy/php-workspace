@@ -13,6 +13,12 @@
 /** @ignore */
 require 'load.php';
 
-/** Set the PAGE constant to the ?page parameter */
-define("PAGE", $_GET["page"]);
+/** Set the PAGE constant to the ?page GET parameter, or "index", if it doesn't exist */
+if (array_key_exists("page", $_GET))
+	define("PAGE", $_GET["page"]);
+else
+	define("PAGE", "index");
+
+echo PAGE;
+session_start();
 ?>
