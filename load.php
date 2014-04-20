@@ -19,3 +19,5 @@ require __DIR__ . "/constants.php";
 // Load files in includes
 require INCLUDES . "/load-includes.php";
 
+/** If TRUE, the page has been loaded via "load.php" */
+define("LOADED", TRUE);
