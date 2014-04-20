@@ -3,7 +3,7 @@
  * @ignore
  */
 
-$en = array(
+$en_main = array(
 	"pw_installed" => "PHP Workspace is installed!", // Shown when PHP Workspace is updated
 	"upgrade" => "Upgrade", // Used on the update page when an update for PW is available
 	"update" => "Update",   // Used on the update page when an update for addons are available
