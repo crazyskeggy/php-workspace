@@ -49,7 +49,7 @@ function checkPHP() {
  * @return void
  */
 function checkMySQL() {
-	if (! extension_loaded('mysql')) {
+	if (!extension_loaded('mysql')) {
 		$die = "<p>The PHP MySQL extension needs to be installed for PHP Workspace to run</p>";
 		die($die);
 	}
