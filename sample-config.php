@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * The base configuration of PHP Workspace
  *
  * This file contains the following settings:
@@ -11,34 +11,55 @@
  * directory. If you do this, you must create "config.php" with the
  * following data:
  *
+ * ```
+ * <?php
  * require "/path/to/config.php";
+ * ```
  *
  * and put this file elsewhere.
  * 
+ * @since 0.0.1
+ * 
  */
 
-
-# MySQL Username
-define("MYSQL_USER", "");
-
-# MySQL Password
-define("MYSQL_PASS", "");
-
-# MySQL Hostname
-define("MYSQL_SERVER", "localhost");
-
-# MySQL Databse Name
+/** The Database PHP Workspace will run in */
 define("MYSQL_DB", "");
 
-# MySQL Table Prefix
-# You can change this setting to have multiple installations of
-# PHP Workspace in the same database.
-# It must end in an underscore, and contain only A-Z, a-z, 0-9 and _
+/** The username of the MySQL user */
+define("MYSQL_USER", "");
+
+/** The password of the MySQL user */
+define("MYSQL_PASS", "");
+
+/** The MySQL host (usually localhost) */
+define("MYSQL_HOST", "localhost");
+
+/**
+ * MySQL Table Prefix
+ * 
+ * You can change this setting to have multiple installations of PHP Workspace
+ * in the same database.
+ * It must end in an underscore, and contain only A-Z, a-z, 0-9 and _
+ * As a regex: `[A-Za-z0-9_]+_` 
+ */
 define("MYSQL_PREFIX", "pw_");
 
-# Default Language - the language must be installed in /includes/langs
-define("DEFAULT_LANG", "en-GB");
+/**
+ * The default language for PHP workspace.
+ * 
+ * Language files are kept in the /includes/languages directory
+ */
+define("DEFAULT_LANG", "en");
+
+/**
+ * The path of the files stored.
+ *
+ * This path is relative to the installation root, with
+ * no starting `/`
+ * 
+ * @internal Default value is: `files/`
+ */
+define("FILES_DIR", "files/");
 
 /* That's everything! You can now start your installation! */
 
-?>
