@@ -18,7 +18,7 @@ $mysql = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_DB);
  * @param string $row The value of the Primary Key in that row
  * @param string $column The column you want to load data from
  * @param string $table The table you want to load data from (without prefix)
- * @return mixed Data Requested
+ * @return mixed Returns the data requested by the user.
  */
 function getDbData($row, $column, $table) {
 	$prefixed = MYSQL_PREFIX . $table;
@@ -34,7 +34,7 @@ function getDbData($row, $column, $table) {
  * is used to find which row to update.
  * The Primary Key must be used to name a row in the table.
  * 
- * @param string $table
+ * @param string $table The table we are checking (including prefix)
  * @return string Name of Primary Key Column
  */
 function getPrKey($table) {
