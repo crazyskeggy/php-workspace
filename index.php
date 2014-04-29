@@ -9,7 +9,7 @@
  * @since 0.0.1
  * 
  */
-
+session_start();
 /** @ignore */
 require 'load.php';
 
