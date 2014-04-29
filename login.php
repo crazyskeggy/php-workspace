@@ -4,6 +4,7 @@
  */
 session_start();
 require __DIR__ . '/constants.php';
+require INCLUDES . "/load-includes.php";
 ?>
 <!DOCTYPE html>
 <html>

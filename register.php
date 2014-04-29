@@ -4,6 +4,7 @@
  */
 session_start();
 require_once __DIR__ . '/constants.php';
+require INCLUDES . "/load-includes.php";
 ?>
 
 <h1><?php _te("login_title"); ?></h1>
