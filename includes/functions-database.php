@@ -11,6 +11,9 @@
  */
 $mysql = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_DB);
 
+if ($mysql->connect_error){
+	die("MySQL connection error: " . $mysql->connect_error)
+}
 
 /**
  * Gets data from the Database.
