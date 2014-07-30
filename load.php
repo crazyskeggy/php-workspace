@@ -21,3 +21,6 @@ require INCLUDES . "/load-includes.php";
 
 /** If TRUE, the page has been loaded via "load.php" */
 define("LOADED", TRUE);
+
+/** The name of the site, chosen in the Options */
+define("siteName", getData("site_name", "value", "options"));
