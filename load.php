@@ -13,8 +13,11 @@
  * 
  */ 
 
+/** The `PATH` constant is the root directory */
+define("PATH", __DIR__ . "/");
+
 // Load constants into memory
-require __DIR__ . "/constants.php";
+require PATH . "constants.php";
 
 // Load files in includes
 require INCLUDES . "/load-includes.php";
