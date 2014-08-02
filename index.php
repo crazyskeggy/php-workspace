@@ -9,6 +9,7 @@
  * @since 0.0.1
  * 
  */
+
 session_start();
 /** @ignore */
 require 'load.php';
@@ -19,6 +20,5 @@ if (array_key_exists("page", $_GET))
 else
 	define("PAGE", "index");
 
-echo PAGE;
-session_start();
 ?>
+
