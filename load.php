@@ -13,6 +13,7 @@
  * 
  */ 
 
+
 /** The `PATH` constant is the root directory of PHP Workspace */
 define("PATH", __DIR__ . "/");
 
